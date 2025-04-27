@@ -105,6 +105,16 @@ app.get('/posts', (req, res) => {
     res.json(posts);
 });
 
+app.get('/posts/:id', (req, res) => {
+    const postId = parseInt(req.params.id, 10);
+    const post = posts.find(p => p.id === postId);
+    if (post) {
+        res.json(post);
+    } else {
+        res.status(404).json({ error: 'Post not found' });
+    }
+});
+
 // Mock database for ads
 let ads = '';
 
