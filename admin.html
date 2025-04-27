@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Dashboard</h1>
+        
+        <section>
+            <h2>Manage Ads</h2>
+            <form id="adsForm">
+                <label for="adContent">Ad Content:</label>
+                <textarea id="adContent" rows="5" required></textarea>
+                <button type="submit">Save Ad</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Publish Article</h2>
+            <form id="articleForm">
+                <label for="articleTitle">Title:</label>
+                <input type="text" id="articleTitle" required>
+                
+                <label for="articleContent">Content:</label>
+                <textarea id="articleContent" rows="10" required></textarea>
+                
+                <button type="submit">Publish</button>
+            </form>
+        </section>
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
