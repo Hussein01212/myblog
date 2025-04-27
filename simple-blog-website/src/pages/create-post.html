@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="create-post-container">
+        <h1>Create a New Post</h1>
+        <form id="createPostForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter the title of your post" required>
+            
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" placeholder="Write your content here..." required></textarea>
+            
+            <button type="submit">Publish</button>
+            <div id="loading" style="display: none;">Submitting your post...</div>
+        </form>
+        <div id="toast" class="toast">Post published successfully!</div>
+    </div>
+    <script src="../js/create-post.js"></script>
+</body>
+</html>

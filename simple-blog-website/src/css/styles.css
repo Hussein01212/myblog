@@ -1,0 +1,345 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* لون خلفية فاتح */
+    color: #333;
+}
+
+/* إصلاح التداخل مع الشريط المتحرك */
+body {
+    margin-top: 40px; /* إضافة مساحة علوية لتجنب التداخل */
+}
+
+/* الشريط المتحرك */
+#news-ticker {
+    background-color: #007acc;
+    color: #ffffff;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #35424a; /* نفس لون الخلفية */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar {
+    background-color: #007acc; /* لون أزرق جذاب */
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #ffcc00; /* لون أصفر عند التمرير */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #00509e; /* لون أزرق داكن */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}   color: #ff6347; /* لون برتقالي عند التمرير */
+}
+article h2 a {
+    color: #007acc;
+    text-decoration: none;
+}   background: #e6f7ff; /* لون أزرق فاتح */
+    padding: 20px;
+article h2 a:hover {px;
+    color: #ff6347; /* لون برتقالي عند التمرير */
+}
+/* Footer */
+/* Sidebar */
+.sidebar {ound-color: #00509e; /* لون أزرق داكن */
+    background: #e6f7ff; /* لون أزرق فاتح */
+    padding: 20px;nter;
+    border-radius: 5px;
+}   margin-top: 20px;
+}
+/* Footer */
+footer { الإعلانات */
+    background-color: #00509e; /* لون أزرق داكن */
+    color: #ffffff;r: #f4f4f4;
+    text-align: center;ddd;
+    padding: 10px 0;
+    margin-top: 20px;
+}   text-align: center;
+    border-radius: 5px;
+/* أنماط الإعلانات */ 5px rgba(0, 0, 0, 0.1);
+.adsense {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-ad {ad {
+    margin-top: 10px;;
+}   max-width: 600px;
+}
+.bottom-ad {
+    margin-bottom: 10px;
+}   transition: background-color 0.3s ease, transform 0.2s ease;
+}   background: url('../images/nature.jpg') no-repeat center center fixed;
+.article-ad {d-size: cover;
+    margin: 20px auto;undScroll 20s linear infinite;
+    max-width: 600px; #00509e; /* لون أزرق داكن عند التمرير */
+}   transform: scale(1.05); /* تأثير تكبير بسيط */
+}* تأثير الحركة للخلفية */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}* تأثير الحركة للخلفية */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}    }        background-position: 10000px 10000px;    100% {    }        background-position: 0 0;    0% {@keyframes starsMove {}    pointer-events: none;    animation: starsMove 50s linear infinite;    background: url('../images/stars.png') repeat;    height: 100%;    width: 100%;    left: 0;    top: 0;    position: fixed;    content: '';body::after {/* تأثير النجوم */@keyframes backgroundScroll {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+}    }        background-position: 10000px 10000px;    100% {    }        background-position: 0 0;    0% {@keyframes starsMove {}    pointer-events: none;    animation: starsMove 50s linear infinite;    background: url('../images/stars.png') repeat;    height: 100%;    width: 100%;    left: 0;    top: 0;    position: fixed;    content: '';body::after {/* تأثير النجوم */@keyframes backgroundScroll {
+    0% { النص ليكون واضحًا فوق الخلفية */
+        background-position: 0% 0%;
+    }olor: #ffffff;
+    100% {hadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        background-position: 100% 100%;
+    }
+}* أزرار شفافة */
+button {
+/* تحسين النص ليكون واضحًا فوق الخلفية */
+body {lor: #ffffff;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}   border-radius: 5px;
+    cursor: pointer;
+/* أزرار شفافة */px;
+button {sition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;gba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}   display: inline-block;
+    background-color: #4285F4;
+button:hover {te;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000000;: none;
+}   border-radius: 5px;
+    font-size: 16px;
+.google-btn {ht: bold;
+    display: inline-block;
+    background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;357ae8;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;{
+    margin-top: 10px;
+}   margin: 20px auto;
+    padding: 20px;
+.google-btn:hover {r: #ffffff;
+    background-color: #357ae8;
+}   border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.create-post-container {
+    max-width: 600px;
+    margin: 20px auto;{
+    padding: 20px;;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}createPostForm input, #createPostForm textarea {
+    width: 100%;
+#createPostForm label {
+    display: block;15px;
+    margin-bottom: 5px;ddd;
+    font-weight: bold;;
+}   font-size: 14px;
+}
+#createPostForm input, #createPostForm textarea {
+    width: 100%;button {
+    padding: 10px;or: #007acc;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;px;
+}   cursor: pointer;
+    font-size: 16px;
+#createPostForm button {nd-color 0.3s ease;
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;utton:hover {
+    padding: 10px 15px;00509e;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}   font-size: 14px;
+    color: #007acc;
+#createPostForm button:hover {
+    background-color: #00509e;
+}
+.toast {
+#loading {lity: hidden;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007acc;r: #4caf50;
+    font-weight: bold;
+}   text-align: center;
+    border-radius: 5px;
+.toast {ing: 10px;
+    visibility: hidden;
+    min-width: 250px;
+    margin: 0 auto;
+    background-color: #4caf50;
+    color: white;anslateX(-50%);
+    text-align: center;
+    border-radius: 5px;px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;: visible;
+    bottom: 30px;dein 0.5s, fadeout 0.5s 2.5s;
+    transform: translateX(-50%);
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}   from {
+        bottom: 0;
+.toast.show {ty: 0;
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}       bottom: 30px;
+        opacity: 1;
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;{
+    }rom {
+    to {bottom: 30px;
+        bottom: 30px;
+        opacity: 1;
+    }o {
+}       bottom: 0;
+        opacity: 0;
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }pacity: 0;
+    to {sform: translateY(20px);
+        bottom: 0;acity 0.6s ease-out, transform 0.6s ease-out;
+        opacity: 0;
+    }
+}fade-in.visible {
+    opacity: 1;
+.fade-in {orm: translateY(0);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#popular-posts {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#popular-posts h2 {
+    color: #007acc;
+    margin-bottom: 15px;
+}
+
+#popular-posts-container article {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#popular-posts-container article h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+#popular-posts-container article p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
