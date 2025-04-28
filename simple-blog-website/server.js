@@ -90,7 +90,13 @@ app.post('/login', async (req, res) => {
 });
 
 // Mock database for posts
-const posts = [];
+const posts = [
+    { id: 1, title: 'The Future of JavaScript', content: 'JavaScript continues to evolve with new features...', date: new Date() },
+    { id: 2, title: 'Understanding CSS Grid', content: 'CSS Grid is a powerful layout system...', date: new Date() },
+    { id: 3, title: '10 Tips for Writing Clean Code', content: 'Writing clean code is essential for maintainability...', date: new Date() },
+    { id: 4, title: 'Exploring Node.js', content: 'Node.js allows developers to build scalable applications...', date: new Date() },
+    { id: 5, title: 'Mastering Async/Await', content: 'Async/Await simplifies asynchronous programming...', date: new Date() },
+];
 
 // Create Post endpoint
 app.post('/create-post', (req, res) => {
@@ -121,13 +127,13 @@ let ads = '';
 // Manage Ads endpoint
 app.post('/manage-ads', (req, res) => {
     const { adContent } = req.body;
-    ads = adContent;
+    ads = adContent || ''; // إذا لم يتم إرسال محتوى، اجعل المكان فارغًا
     res.json({ success: true });
 });
 
 // Endpoint to get ads
 app.get('/ads', (req, res) => {
-    res.json({ adContent: ads });
+    res.json({ adContent: ads || '' }); // إذا لم يكن هناك محتوى، أرسل نصًا فارغًا
 });
 
 app.get('/is-logged-in', (req, res) => {

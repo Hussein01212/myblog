@@ -17,10 +17,9 @@ document.getElementById('createPostForm')?.addEventListener('submit', async (e) 
 
         const data = await response.json();
         if (data.success) {
-            showToast('Post published successfully!');
-            setTimeout(() => {
-                window.location.href = 'index.html';
-            }, 3000); // الانتظار 3 ثوانٍ قبل إعادة التوجيه
+            alert('Post published successfully!');
+            // إعادة التوجيه إلى الصفحة الرئيسية
+            window.location.href = 'index.html';
         } else {
             alert('Failed to publish post.');
         }
@@ -31,13 +30,3 @@ document.getElementById('createPostForm')?.addEventListener('submit', async (e) 
         loadingIndicator.style.display = 'none';
     }
 });
-
-// وظيفة لإظهار الإشعار
-function showToast(message) {
-    const toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.className = 'toast show';
-    setTimeout(() => {
-        toast.className = toast.className.replace('show', '');
-    }, 3000);
-}
