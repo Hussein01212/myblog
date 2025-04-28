@@ -10,7 +10,10 @@
 <body>
     <!-- Navbar -->
     <div id="navbar">
-        <!-- ...existing code... -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
         <a href="create-post.html" class="admin-button">Admin</a>
     </div>
 
@@ -21,6 +24,7 @@
         </div>
         <section id="recent-posts">
             <h2>Recent Posts</h2>
+            <input type="text" id="searchBar" placeholder="Search posts..." oninput="filterPosts()">
             <div id="posts-container">
                 <!-- Posts will be dynamically loaded here -->
             </div>
@@ -28,10 +32,19 @@
     </main>
 
     <!-- Sidebar -->
-    <aside id="sidebar"></aside>
+    <aside id="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Programming</a></li>
+            <li><a href="#">Design</a></li>
+        </ul>
+    </aside>
 
     <!-- Footer -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <p>&copy; 2023 Simple Blog Website. All rights reserved.</p>
+    </footer>
 
     <script src="js/main.js"></script>
     <script>
@@ -51,6 +64,20 @@
                     container.appendChild(article);
                 });
             });
+
+        function filterPosts() {
+            const query = document.getElementById('searchBar').value.toLowerCase();
+            const posts = document.querySelectorAll('#posts-container article');
+            posts.forEach(post => {
+                const title = post.querySelector('h2 a').textContent.toLowerCase();
+                const content = post.querySelector('p').textContent.toLowerCase();
+                if (title.includes(query) || content.includes(query)) {
+                    post.style.display = '';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
     </script>
 </body>
 </html>

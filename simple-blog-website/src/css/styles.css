@@ -1,30 +1,97 @@
-.admin-actions {
-    text-align: right;
+/* تحسين تصميم المقالات */
+article {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.admin-button {
-    display: inline-block;
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين تصميم الروابط */
+a {
+    color: #007acc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00509e;
+    text-decoration: underline;
+}
+
+/* تحسين تصميم العناوين */
+h1, h2 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+}
+
+/* تحسين تصميم الأزرار */
+button {
     background-color: #007acc;
     color: #ffffff;
+    border: none;
     padding: 10px 15px;
-    text-decoration: none;
     border-radius: 5px;
+    cursor: pointer;
     font-size: 14px;
-    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
-.admin-button:hover {
+button:hover {
     background-color: #00509e;
 }
 
-.post-container {
-    max-width: 800px;
-    margin: 20px auto;
+/* تحسين تصميم الشريط الجانبي */
+#sidebar {
+    background-color: #f4f4f4;
     padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسين تصميم الفوتر */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}    background-color: #1f1f1f;body.dark-mode footer {}    background-color: #1f1f1f;body.dark-mode #navbar {}    color: #90caf9;body.dark-mode a {}    color: #ffffff;    background-color: #121212;body.dark-mode {
+/* تأثيرات عند التمرير */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
