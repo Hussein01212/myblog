@@ -24,7 +24,10 @@
         </div>
         <section id="recent-posts">
             <h2>Recent Posts</h2>
-            <input type="text" id="searchBar" placeholder="Search posts..." oninput="filterPosts()">
+            <p id="post-count" class="text-muted"></p>
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Search posts..." oninput="filterPosts()">
+            </div>
             <div id="posts-container">
                 <!-- Posts will be dynamically loaded here -->
             </div>
@@ -53,7 +56,9 @@
             .then(response => response.json())
             .then(posts => {
                 const container = document.getElementById('posts-container');
+                const postCount = document.getElementById('post-count');
                 container.innerHTML = ''; // Clear container
+                postCount.textContent = `Total Posts: ${posts.length}`;
                 posts.forEach(post => {
                     const article = document.createElement('article');
                     article.innerHTML = `
